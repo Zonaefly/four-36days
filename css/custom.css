@@ -17,8 +17,8 @@
 
 #tree {
   display: block;
-  height: 99% auto;
-  width: 99% auto;
+  height: 100%;
+  width: 100%;
   position: absolute;
   z-index: -1;
   top: 0;
