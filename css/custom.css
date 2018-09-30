@@ -1,0 +1,75 @@
+
+.bg {
+  background: #000 ;
+}
+
+#four {
+  display: block;
+  height: 100% auto;
+  width: 100% auto;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+
+}
+
+
+#tree {
+  display: block;
+  height: 99% auto;
+  width: 99% auto;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+
+}
+
+#grass {
+  display: block;
+  height: 100% auto;
+  width: 100% auto;
+  position: absolute ;
+  z-index: -2;
+  top: 0;
+
+}
+
+#bushes {
+  display: block;
+  height: 100% auto;
+  width: 100% auto;
+  position: absolute;
+  z-index: -3;
+  top: 0;
+
+}
+
+#hills {
+  display: block;
+  height: 100% auto;
+  width: 100% auto;
+  position: absolute;
+  z-index: -4;
+  top: 0;
+}
+
+#mountains {
+  display: block;
+  height: 100% auto;
+  width: 100% auto;
+  position: absolute;
+  z-index: -5;
+  top: 0;
+
+}
+
+
+#sky {
+  display: block;
+  height: 100% auto;
+  width: 100% auto;
+  position: absolute;
+  z-index: -6;
+  top: 0;
+
+}
