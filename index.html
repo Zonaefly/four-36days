@@ -1,0 +1,59 @@
+<html class="no-js" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <META HTTP-EQUIV="X-UA-Compatible" content="IE-edge, chrome-1">
+  <meta name="robots" content="index, follow">
+
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+
+
+  <title>Four</title>
+
+  <link href="css/1140.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+  <div id="bg">
+    <div class="container12">
+      <ul id="scene"
+      data-limit-x="false"
+      data-limit-y="false"
+      data-friction-x="0.5"
+      data-friction-y="0.5">
+        <li class="layer" id="sky" data-depth="0.00"><img src="images/four-parallax-layer0.png"></li>
+        <li class="layer" id="mountains" data-depth-x="0.05" data-depth-Y="0.05"><img src="images/four-parallax-layer1a.png"></li>
+        <li class="layer" id="hills" data-depth-x="0.10" data-depth-Y="0.10"> <img src="images/four-parallax-layer2a.png"></li>
+        <li class="layer" id="bushes" data-depth-x="0.2" data-depth-Y="0.2"><img src="images/four-parallax-layer3.png"></li>
+        <li class="layer" id="grass" data-depth-x="0.25" data-depth-Y="0.25"><img src="images/four-parallax-layer4a.png"></li>
+        <li class="layer" id="tree" data-depth-x="0.3" data-depth-Y="0.3"><img src="images/four-parallax-layer5.png"></li>
+        <li class="layer" id="four" data-depth-x="0.00" data-depth-y="0.0"><img src="images/four-parallax-layer6.png"></li>
+      </ul>
+    </div>
+  </div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src-"deploy/parallax.js"></script>
+<script>
+
+// Pretty simple huh?
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
+
+
+function damp(value) {
+    // Applies a damping curve to the movement of the layers so the farther you tilt, the less strongly the effect should be felt
+    return Math.atan((1/40)*value) * multiplier;
+};
+
+
+
+
+</script>
+
+
+</body>
+</html>
