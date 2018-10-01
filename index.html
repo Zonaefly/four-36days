@@ -21,8 +21,10 @@
       <ul id="scene"
       data-limit-x="false"
       data-limit-y="false"
-      data-friction-x="1"
-      data-friction-y="1">
+      data-scalar-x="1"
+      data-scalar-y="1"
+      data-friction-x="3"
+      data-friction-y="3">
    
         <li class="layer" id="sky" data-depth="0.00"><img src="images/four-parallax-layer0a.png"></li>
         <li class="layer" id="mountains" data-depth-x="0.08" data-depth-Y="0.08"><img src="images/four-parallax-layer1a.png"></li>
@@ -47,7 +49,7 @@ var parallax = new Parallax(scene);
 
 function damp(value) {
     // Applies a damping curve to the movement of the layers so the farther you tilt, the less strongly the effect should be felt
-    return Math.atan((1/20)*value) * multiplier;
+    return Math.atan((1/40)*value) * multiplier;
 };
 
 
